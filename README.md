@@ -21,6 +21,13 @@ npm install
 # If you get an error about an encryption key
 php artisan key:generate
 
+# Add two line in app/provides/AppServiceProvider.php
+"use Illuminate\Support\Facades\Schema"
+"use Illuminate\Http\Resources\Json\JsonResource"
+
+# Add line below in boot function
+"Schema::defaultStringLength(191);"
+
 # Run Migrations
 php artisan migrate
 
