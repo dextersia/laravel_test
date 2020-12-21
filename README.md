@@ -12,17 +12,19 @@
 ``` bash
 # Install Dependencies
 composer install
+npm install
+
+# Setup database
+# Create a database called "todolist"
+# Create your .env file
+
+# If you get an error about an encryption key
+php artisan key:generate
 
 # Run Migrations
 php artisan migrate
 
-# Import Articles
-php artisan db:seed
-
 # Add virtual host if using Apache
-
-# If you get an error about an encryption key
-php artisan key:generate
 ```
 
 ## About Laravel
